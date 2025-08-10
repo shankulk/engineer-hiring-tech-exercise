@@ -78,3 +78,36 @@ the trade-offs you made during the development process, and aspects you might ha
 3. Push the code back.
 4. Add us (@2014klee, @danyal-zego, @bogdangoie and @cypherlou) as collaborators and tag us to review.
 5. Notify your TA so they can chase the reviewers.
+
+
+# How to run the code
+## Virtual Environment
+Enable the virtual environment in your terminal:
+```bash
+source .venv/bin/activate
+```
+## Install dependencies
+```bash
+pip3 install -r requirements.txt
+```
+## Run the crawler
+#### Command-line runner
+```bash
+python3 -m src.main.main
+```
+#### Passing the URL
+- Program will prompt you to enter the URL to crawl.
+- Enter the URL in the format `https://google.com` (subdomains and paths will be stripped by the code)
+
+
+# How to run the tests
+```bash
+source .venv/bin/activate
+pip3 install pytest asynctest
+pytest tests/
+```
+
+# Tools used
+- Python 3.9
+- PyCharm IDE
+- GitHub Copilot (GPT 4.1)

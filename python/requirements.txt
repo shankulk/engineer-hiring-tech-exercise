@@ -1,0 +1,8 @@
+requests
+tldextract
+urllib3
+argparse
+bs4
+aiohttp
+asyncio
+pylint
